@@ -12,7 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+//= require jquery-ui/effects/effect-highlight
 //= require cocoon
 //= require global
+//= require turbolinks
+//= require_tree .
+

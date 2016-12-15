@@ -14,6 +14,7 @@
             <div class='links'>
                 <%= link_to_add_association 'Add address', f, :addresses %>
             </div>
+            <p class='count'>Total: <span><%= @place.addresses.count %></span></p>
         </div>
     </div>
     <%= f.submit %>
