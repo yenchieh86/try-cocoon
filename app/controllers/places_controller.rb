@@ -6,7 +6,6 @@ class PlacesController < ApplicationController
     
     def new
         @place = Place.new
-        3.times { @place.addresses.build }
     end
     
     def create
@@ -21,11 +20,6 @@ class PlacesController < ApplicationController
     
     def edit
       @place = Place.find(params[:id])
-      
-        if @place.addresses.length < 3
-            n = 3 - @place.addresses.length
-            n.times { @place.addresses.build }
-        end
     end
     
     def update
