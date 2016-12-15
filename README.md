@@ -14,7 +14,7 @@ gem 'cocoon'
 ```
 and run 
 ```
-bundle install
+$ bundle install
 ```
 
 ## jQuery-ui
@@ -25,7 +25,7 @@ gem 'jquery-ui-rails'
 ```
 and run 
 ```
-bundle install
+$ bundle install
 ```
 
 ## Resources from
