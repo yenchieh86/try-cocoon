@@ -1,14 +1,15 @@
 <li>
-    <strong><%= place.title %></strong>
-    </br>
+    <strong><%= place.title %></strong> | <%= link_to 'Edit place', edit_place_path(place) %></br>
+    
     <% if place.addresses.any? %>
         Addresses:
         <ul>
-            <%= place.addresses.each do |address| %>
+            <% place.addresses.each do |address| %>
                 <li>
                     <%= address.city %>, <%= address.street %>
                 </li>
             <% end %>
         </ul>
     <% end %>
+    </br>
 </li>
