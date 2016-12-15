@@ -1,0 +1,14 @@
+<li>
+    <strong><%= place.title %></strong>
+    </br>
+    <% if place.addresses.any? %>
+        Addresses:
+        <ul>
+            <%= place.addresses.each do |address| %>
+                <li>
+                    <%= address.city %>, <%= address.street %>
+                </li>
+            <% end %>
+        </ul>
+    <% end %>
+</li>
